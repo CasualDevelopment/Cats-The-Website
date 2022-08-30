@@ -6,15 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Cats! The Website</title>
+    <!-- add our favicon -->
+    <link
+      rel="shortcut icon"
+      href="./public/assests/logo-transparent.png"
+      type="image/png"
+    />
   </head>
   <body>
     <header class="header">
       <!-- contains logo, title, and nav -->
       <div class="header_logo-wrapper">
         <!-- logo and title -->
-        <img src="#" alt="logo" />
-        <!-- new classname added here -->
-        <div>
+        <img
+          src="./public/assests/logo-transparent.png"
+          alt="cartoon cat logo"
+          width="100px"
+        />
+        <div class="header_logo-wrapper_title-div">
           <h1>Cats!</h1>
           <p>The Website</p>
         </div>
@@ -35,16 +44,12 @@
       </nav>
     </header>
     <main>
-      <section id="home">
-        <img src="#" alt="Hero image" />
+      <section id="home" class="hero-section">
+        <!-- move to css background instead -->
         <h2>For the Meows!</h2>
       </section>
-      <section id="about">
-        <!-- iconic cat image, description of the feline species and history of domestication -->
-        <div>
-          <img src="#" alt="About Image" />
-        </div>
-        <div>
+      <section id="about" class="about-section">
+        <div class="about-section_content-wrapper">
           <h2>Felis Catus</h2>
           <blockquote>
             The cat (Felis catus) is a domestic species of small carnivorous
@@ -62,18 +67,33 @@
               target="_blank"
               referrerpolicy="no-referrer"
             >
-              WikipediA</a
+              ~ WikipediA ~</a
+            >
+          </legend>
+        </div>
+        <div class="about-section_image-wrapper">
+          <img src="./public/assests/about-image-1.jpg" alt="About Image" />
+          <legend>
+            Photo by
+            <a
+              href="https://unsplash.com/@allecgomes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Allec Gomes</a
+            >
+            on
+            <a
+              href="https://unsplash.com/collections/mzKYzLK8l9I/cats-the-website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
             >
           </legend>
         </div>
       </section>
-      <section id="favorites">
+      <section id="favorites" class="favorites-section">
         <h2>This Months Best Cats!</h2>
-        <ul>
-          <li>
-            <div>
-              <img src="#" alt="Cat photo" />
-              <div>
+        <ul class="favorites-section_grid-list">
+          <li class="card-wrapper">
+            <div class="card">
+              <img src="./public/assests/favorites-1.jpg" alt="Cat photo" />
+              <div class="card-content">
                 <h3>El Gato!</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -84,10 +104,10 @@
               </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="#" alt="Cat photo" />
-              <div>
+          <li class="card-wrapper">
+            <div class="card">
+              <img src="./public/assests/favorites-2.jpg" alt="Cat photo" />
+              <div class="card-content">
                 <h3>El Gato!</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -98,10 +118,10 @@
               </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="#" alt="Cat photo" />
-              <div>
+          <li class="card-wrapper">
+            <div class="card">
+              <img src="./public/assests/favorites-3.jpg" alt="Cat photo" />
+              <div class="card-content">
                 <h3>El Gato!</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -112,10 +132,10 @@
               </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="#" alt="Cat photo" />
-              <div>
+          <li class="card-wrapper">
+            <div class="card">
+              <img src="./public/assests/favorites-4.jpg" alt="Cat photo" />
+              <div class="card-content">
                 <h3>El Gato!</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -126,10 +146,10 @@
               </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="#" alt="Cat photo" />
-              <div>
+          <li class="card-wrapper">
+            <div class="card">
+              <img src="./public/assests/favorites-5.jpg" alt="Cat photo" />
+              <div class="card-content">
                 <h3>El Gato!</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -140,10 +160,10 @@
               </div>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="#" alt="Cat photo" />
-              <div>
+          <li class="card-wrapper">
+            <div class="card">
+              <img src="./public/assests/favorites-6.jpg" alt="Cat photo" />
+              <div class="card-content">
                 <h3>El Gato!</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos,
@@ -156,10 +176,10 @@
           </li>
         </ul>
       </section>
-      <section id="blog">
+      <section id="blog" class="blog-section">
         <h2>The Scratching Post</h2>
-        <div>
-          <article>
+        <div class="article-container">
+          <article class="article-content">
             <h3>Article Title</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet eos,
@@ -180,7 +200,19 @@
             </p>
             <!-- added new image -->
             <div class="article_image-wrapper">
-              <img src="#" alt="Article Image" />
+              <img src="./public/assests/blog-image.jpg" alt="Article Image" />
+              <legend>
+                Photo by
+                <a
+                  href="https://unsplash.com/@d13n?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Dietmar Ludmann</a
+                >
+                on
+                <a
+                  href="https://unsplash.com/collections/mzKYzLK8l9I/cats-the-website?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                  >Unsplash</a
+                >
+              </legend>
             </div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
@@ -208,52 +240,75 @@
               laudantium, natus, quod perferendis cupiditate molestias? Numquam
               neque dolorem porro nesciunt a?
 
-              <legend>Random Italian</legend>
+              <legend>~ Random Italian ~</legend>
             </blockquote>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum,
+              mollitia unde adipisci quasi consequuntur corporis! Voluptates
+              similique eligendi adipisci nostrum corporis dolorum explicabo
+              voluptate! Saepe in eius architecto illum repellat! Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Amet eos, perferendis
+              minima rerum iure, quas nihil, aliquid cupiditate eaque odio aut
+              dolores tempore consequatur! Dolor possimus consequuntur sequi
+              facilis modi. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Amet eos, perferendis minima rerum iure, quas nihil, aliquid
+              cupiditate eaque odio aut dolores tempore consequatur! Dolor
+              possimus consequuntur sequi facilis modi. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Amet eos, perferendis minima
+              rerum iure, quas nihil, aliquid cupiditate eaque odio aut dolores
+              tempore consequatur! Dolor possimus consequuntur sequi facilis
+              modi. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Amet eos, perferendis minima rerum iure, quas nihil, aliquid
+              cupiditate eaque odio aut dolores tempore consequatur! Dolor
+              possimus consequuntur sequi facilis modi.
+            </p>
           </article>
         </div>
-        <div>
+        <div class="blog-section_link">
           <a href="#">
             <!-- placeholder for the time being -->
             See all posts
           </a>
         </div>
       </section>
-      <section id="fun-facts">
+      <section id="fun-facts" class="fun-facts">
         <h2>Fun Facts About Cats!</h2>
-        <ul>
-          <li>
+        <ul class="fun-facts_list">
+          <li class="fun-facts_list-item">
             <blockquote>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-              laudantium voluptate minus ipsam voluptates velit, qui, magni
-              commodi dolorum quisquam molestiae corrupti recusandae distinctio,
-              omnis sapiente. Molestiae dolores neque atque!
+              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
+              adipisicing elit. Totam laudantium voluptate minus ipsam
+              voluptates velit, qui, magni commodi dolorum quisquam molestiae
+              corrupti recusandae distinctio, omnis sapiente. Molestiae dolores
+              neque atque!
             </blockquote>
-            <legend>Random Italian 2</legend>
+            <legend>~ Random Italian 2 ~</legend>
           </li>
-          <li>
+          <li class="fun-facts_list-item">
             <blockquote>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-              laudantium voluptate minus ipsam voluptates velit, qui, magni
-              commodi dolorum quisquam molestiae corrupti recusandae distinctio,
-              omnis sapiente. Molestiae dolores neque atque!
+              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
+              adipisicing elit. Totam laudantium voluptate minus ipsam
+              voluptates velit, qui, magni commodi dolorum quisquam molestiae
+              corrupti recusandae distinctio, omnis sapiente. Molestiae dolores
+              neque atque!
             </blockquote>
-            <legend>Random Italian 3</legend>
+            <legend>~ Random Italian 3 ~</legend>
           </li>
-          <li>
+          <li class="fun-facts_list-item">
             <blockquote>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam
-              laudantium voluptate minus ipsam voluptates velit, qui, magni
-              commodi dolorum quisquam molestiae corrupti recusandae distinctio,
-              omnis sapiente. Molestiae dolores neque atque!
+              <strong>Lorem ipsum</strong> dolor sit amet, consectetur
+              adipisicing elit. Totam laudantium voluptate minus ipsam
+              voluptates velit, qui, magni commodi dolorum quisquam molestiae
+              corrupti recusandae distinctio, omnis sapiente. Molestiae dolores
+              neque atque!
             </blockquote>
-            <legend>Totally not a cat 4</legend>
+            <legend>~ Totally not a cat 4 ~</legend>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <ul>
+    <footer class="footer">
+      <ul class="footer_link-list">
         <li>
           <a href="#" target="_blank" rel="no-referrer">Github Repo</a>
         </li>
@@ -261,6 +316,23 @@
           <a href="#" target="_blank" rel="no-referrer">See more creations!</a>
         </li>
       </ul>
+      <!-- add in website logo -->
+      <div class="header_logo-wrapper">
+        <!-- logo and title -->
+        <img
+          src="./public/assests/logo-transparent.png"
+          alt="cartoon cat logo"
+          width="100px"
+        />
+        <div class="header_logo-wrapper_title-div">
+          <h1>Cats!</h1>
+          <p>The Website</p>
+        </div>
+      </div>
+      <!-- add in copyright div -->
+      <div class="copyright-div">
+        <p>&copy; CasualDevelopment 2022</p>
+      </div>
     </footer>
   </body>
 </html>
