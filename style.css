@@ -59,6 +59,8 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   position: sticky;
   top: 0;
+  /* add in future video */
+  box-shadow: 0 1px 12px black;
 }
 
 .header_logo-wrapper {
@@ -83,6 +85,7 @@ footer {
 .nav {
   justify-self: end;
   align-self: flex-end;
+  margin-right: 2em;
 }
 
 .nav-list {
@@ -104,23 +107,23 @@ footer {
 }
 
 .home-nav:hover,
-.home-nav:focus {
+.home-nav:focus-within {
   background-color: var(--sec-primary-clr);
 }
 .about-nav:hover,
-.about-nav:focus {
+.about-nav:focus-within {
   background-color: var(--sec-secondary-clr);
 }
 .favorites-nav:hover,
-.favorites-nav:focus {
+.favorites-nav:focus-within {
   background-color: var(--sec-tertiary-clr);
 }
 .blog-nav:hover,
-.blog-nav:focus {
+.blog-nav:focus-within {
   background-color: var(--sec-quaternary-clr);
 }
 .fun-facts-nav:hover,
-.fun-facts-nav:focus {
+.fun-facts:focus-within {
   background-color: var(--sec-primary-clr);
 }
 
@@ -216,13 +219,15 @@ footer {
 }
 
 .card-wrapper {
-  max-height: fit-content;
+  max-height: max-content;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .card {
+  /* added height to make cards uniform */
+  height: 95%;
   min-width: 20vw;
   background-color: var(--boundary-clr);
   padding: 1em;
@@ -242,6 +247,9 @@ footer {
   text-align: center;
   padding: 1em;
   font-family: "meowcat", sans-serif;
+  /* moved to the correct spot in the code */
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
 }
 
 .card-content h3,
@@ -251,11 +259,6 @@ footer {
 
 .card-content h3 {
   font-size: 2rem;
-}
-
-.card-content {
-  font-size: 1.25rem;
-  letter-spacing: 0.5px;
 }
 
 /* blog section styles */
@@ -367,39 +370,39 @@ footer {
 }
 
 .fun-facts_list-item blockquote::before {
-    content: '"';
-    font-size: 4rem;
-    font-family: "meows";
+  content: '"';
+  font-size: 4rem;
+  font-family: "meows";
 }
 
 .fun-facts_list-item legend {
-    font-family: "meows", sans-serif;
+  font-family: "meows", sans-serif;
 }
 
 /* footer styles */
 .footer {
-    height: min-content;
-    padding: 0 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  height: min-content;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .footer_link-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-top: 1em;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1em;
 }
 
 .footer_link-list li {
-    margin: 1em 0;
+  margin: 1em 0;
 }
 
 .footer_link-list li a {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .copyright-div {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
