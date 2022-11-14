@@ -28,7 +28,7 @@
           <p>The Website</p>
         </div>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main Navigation">
         <ul class="nav-list">
           <!-- one link per section -->
           <li class="nav-item home-nav"><a href="#home">Home</a></li>
@@ -39,6 +39,27 @@
           <li class="nav-item blog-nav"><a href="#blog">Blog</a></li>
           <li class="nav-item fun-facts-nav">
             <a href="#fun-facts">Fun Facts</a>
+          </li>
+          <li class="dropdown">
+            <button
+              type="button"
+              class="dropdown__title"
+              aria-expanded="false"
+              aria-controls="menu-dropdown"
+            >
+              Menu
+            </button>
+            <ul class="dropdown__menu" id="menu-dropdown">
+              <li class="nav-item home-nav"><a href="#home">Home</a></li>
+              <li class="nav-item about-nav"><a href="#about">About</a></li>
+              <li class="nav-item favorites-nav">
+                <a href="#favorites">Favorites</a>
+              </li>
+              <li class="nav-item blog-nav"><a href="#blog">Blog</a></li>
+              <li class="nav-item fun-facts-nav">
+                <a href="#fun-facts">Fun Facts</a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
