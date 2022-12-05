@@ -5,6 +5,8 @@
   --sec-tertiary-clr: #e4c5d6;
   --sec-quaternary-clr: #ceb6df;
 }
+/* for casualdev link */
+@import url(https://fonts.bunny.net/css?family=alfa-slab-one:400);
 
 /* add our fonts */
 
@@ -143,6 +145,15 @@ ul {
 .fun-facts-nav:hover,
 .fun-facts:focus-within {
   background-color: var(--sec-primary-clr);
+}
+
+.casualdev {
+  background-color: #51fa7b;
+}
+
+.casualdev a {
+  color: black;
+  font-family: "Alfa Slab One";
 }
 
 /* header media queries */
