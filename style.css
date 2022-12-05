@@ -11,11 +11,13 @@
 @font-face {
   font-family: "meows";
   src: url("./public/fonts/meows-font/Meows-VGWjy.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "meowcat";
   src: url("./public/fonts/meowcat-font/Meowcat-rgmlK.ttf");
+  font-display: swap;
 }
 
 /* base element styles */
@@ -153,7 +155,7 @@ ul {
     font-size: 2.5rem;
     text-decoration: underline var(--sec-primary-clr) 0.25em;
   }
-  
+
   .header_logo-wrapper_title-div p {
     font-size: 1rem;
   }
@@ -244,7 +246,7 @@ ul {
 }
 
 .hero-section {
-  background-image: url("./public/assests/hero-image.jpg");
+  background-image: url("./public/assests/hero-image.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -259,7 +261,6 @@ ul {
   font-size: 7rem;
   width: min-content;
 }
-
 
 /* hero section media queries */
 @media screen and (max-width: 600px) {
@@ -506,7 +507,7 @@ ul {
 
 .fun-facts {
   text-align: center;
-  background-image: url("./public/assests/fun-facts-image.jpg");
+  background-image: url("./public/assests/fun-facts-image.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
